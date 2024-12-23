@@ -11,6 +11,6 @@ i=0
 while (task_queue.qsize()>0):
     t = task_queue.get()
     i = i+1
-    print("tache effectuée",i)
     t.work()
+    print("tache ", t.identifier," effectuée avec un temps de ", t.time)
     result_queue.put(t)

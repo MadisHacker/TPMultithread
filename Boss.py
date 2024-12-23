@@ -8,8 +8,8 @@ m.connect()
 task_queue = m.task_queue()
 result_queue = m.result_queue()
 
-for i in range(10):
+for i in range(1):
     task_queue.put(Task(i))
-for i in range(10):
+for i in range(1):
     res= result_queue.get()
     
